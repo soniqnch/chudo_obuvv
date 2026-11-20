@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+	  <ApplicationDefaultFont>Calibri, 10pt</ApplicationDefaultFont>
+	  <ApplicationIcon>Resources\app.ico</ApplicationIcon>
+	  <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MySqlConnector" Version="3.0.0" />
+  </ItemGroup>
+	<ItemGroup>
+		<None Update="Resources\Images\*.png" CopyToOutputDirectory="PreserveNewest" />
+		<None Update="Resources\picture.png" CopyToOutputDirectory="PreserveNewest" />
+		<None Update="Resources\logo.png;Resources\app.ico" CopyToOutputDirectory="PreserveNewest" />
+	</ItemGroup>
+
+</Project>
